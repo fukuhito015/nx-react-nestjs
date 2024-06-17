@@ -10,6 +10,7 @@
           "error",
           {
             "enforceBuildableLibDependency": true,
+            "allowCircularSelfDependency": true, // added
             "allow": [],
             "depConstraints": [
               {
@@ -35,8 +36,7 @@
       "files": ["*.spec.ts", "*.spec.tsx", "*.spec.js", "*.spec.jsx"],
       "env": {
         "jest": true
-      },
-      "rules": {}
+      }
     }
   ]
 }
